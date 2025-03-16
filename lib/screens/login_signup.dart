@@ -64,7 +64,7 @@ class LoginSignupScreen extends StatelessWidget {
                   minimumSize: Size(double.infinity, 50),
                 ),
                 child: Text(
-                  "Continue as guest",
+                  "Continue as guest.",
                   style: TextStyle(fontSize: 18, color: Colors.white),
                 ),
               ),
