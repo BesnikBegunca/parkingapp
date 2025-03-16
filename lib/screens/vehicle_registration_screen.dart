@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:parking/screens/scan_page.dart';
+import 'scan_page.dart'; // Import the Scan Page
 
 class RegisterVehicleScreen extends StatelessWidget {
   @override
@@ -33,9 +35,14 @@ class RegisterVehicleScreen extends StatelessWidget {
             SizedBox(height: 20),
             Text("OR", style: TextStyle(color: Colors.white70)),
             SizedBox(height: 20),
+
+            // 🔹 Button to Navigate to ScanPage
             ElevatedButton.icon(
               onPressed: () {
-                // Add scan number logic
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ScanPage()),
+                );
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.grey[800],
